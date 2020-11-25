@@ -18,3 +18,13 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 console.log(myMap)
+
+// Create a new marker
+// Pass in some initial options, and then add it to the map using the addTo method
+var marker = L.marker([45.52, -122.67], {
+  draggable: true,
+  title: "My First Marker"
+}).addTo(myMap);
+
+// Binding a pop-up to our marker
+marker.bindPopup("Hello There!");
