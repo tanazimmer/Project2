@@ -1,11 +1,10 @@
-
 // Creating map object
 var myMap = L.map("map", {
-  center: [40.7, -73.95],
+  center: [40.7128, -74.0059],
   zoom: 11
 });
- console.log("test")
-// Adding tile layer to the map
+
+// Adding tile layer
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
@@ -14,15 +13,3 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   id: "mapbox/streets-v11",
   accessToken: API_KEY
 }).addTo(myMap);
-console.log(myMap)
-console.log("map");
-
-// Create a new marker
-// Pass in some initial options, and then add it to the map using the addTo method
-var marker = L.marker([45.52, -122.67], {
-  draggable: true,
-  title: "My First Marker"
-}).addTo(myMap);
-
-// Binding a pop-up to our marker
-marker.bindPopup("Hello There!");
