@@ -1,6 +1,3 @@
-// Set a cross-site cookie for third-party contexts
-//gtag('config', 'OUR_GA_ID', {cookie_flags: 'SameSite=None;Secure'});
-
 
 // Creating map object
 var myMap = L.map("map", {
@@ -18,6 +15,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 console.log(myMap)
+console.log("map");
 
 // Create a new marker
 // Pass in some initial options, and then add it to the map using the addTo method
