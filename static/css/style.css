@@ -175,11 +175,4 @@ p{
 
 }
 
-.bar {
-	fill: rgb(255, 0, 255);
-  }
-  
-  .bar:hover {
-	fill: rgb(9, 0, 128);
-  }
 
