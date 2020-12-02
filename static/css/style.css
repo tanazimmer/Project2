@@ -5,7 +5,20 @@ grey = #ced3dc
 lt blue = #90c2e7
 dk blue = #4e8098
 */
-
+/* remove default margin and padding from body */
+body {
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* set map, body, and html to 100% of the screen size */
+  #map,
+  body,
+  html {
+	height: 80%;
+	width: 80%;
+  }
+  
 body{
 	background-color: #fcf7f8; 
 	color:#4e8098
