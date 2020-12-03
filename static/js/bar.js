@@ -70,17 +70,9 @@ d3.csv("dataFrame_Bar.csv").then(function(tvData) {
     .attr("y", d => yLinearScale(d.num_of_crimes))
     .attr("width", xBandScale.bandwidth())
     .attr("height", d => chartHeight - yLinearScale(d.num_of_crimes))
-    
-    
-//   chartGroup.append('g')
-//     .attr('class', 'grid')
-//     .call(makeYLines()
-//     .tickSize(-width, 0, 0)
-//     .tickFormat(''));
 
- ///////////// 
- 
-/////////////        
+        
+           
 }).catch(function(error) {
   console.log(error);
 });
