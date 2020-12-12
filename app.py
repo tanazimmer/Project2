@@ -18,6 +18,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 # Save reference to the Bar table
 Main = Base.classes.hate_crimes
+Bar = Base.classes.bar_graph
 
 #################################################
 # Flask Setup
@@ -53,14 +54,15 @@ def passengers():
     # Create our session (link) from Python to the DB
     session = Session(engine)
     # Query all Administration Years from the grouped data
-    bar_results = session.query(Main.data_year).all()
+    bar_results = session.query(Bar.data_year, Bar.num_of_crimes).all()
     session.close()
     # Dictionary from the row data in the Bar Table 
     # Appended to a list of bar_grouped
     bar_grouped = []
-    for data_year in bar_results:
+    for data_year, num_of_crimes in bar_results:
         bar_dict = {}
         bar_dict["data_year"] = data_year
+        bar_dict["num_of_crimes"] = num_of_crimes
         bar_grouped.append(bar_dict)
     return jsonify(bar_grouped)
 @app.route("/index2.html")
