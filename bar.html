@@ -32,7 +32,7 @@ crossOrigin=""></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 ​<!--Tab Title-->
-  <title>Home</title>
+  <title>Bar Charts</title>
 ​  
   </head>
 ​<!--Start of Body-->
@@ -73,37 +73,43 @@ crossOrigin=""></script>
 
 
 ​
-
 <!-- summary box -->
-<div class="container"></div>
-<section class="row">   <center> 
-    <div class="col-lg-8 col-md-8">        
-    <h1 class="description-header">Visualizations of Hate Crimes in the US</h1>
-    </div>
-  
-      <div class="col-lg-8 col-md-8">
+<div class="container">
+    <section class="row">
+      <div class="col-lg-12 col-md-12">
         <div class="description-content">
-        We are currently being bombarded by the media with news of hate crimes, and many media outlets want to blame the Presidential Administration.  We set out to see if hate crimes truly are the highest they've been in years.
-        You can view our presentation below, and access the interactive visualzations from the menu.
-      </div></center>
-    </div>
-    <div class="col-lg-12 col-md-12">
-      <center>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT4q8RZGSyX3eMIvy7vu0YSzcD8XELfz_lcKXmMQtX-atEbnNrDB5zrkN1mAKKbAZBM0ZVEJFWc4-u8/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </center>
-
-    </div>
-      <hr>
-      <br><br><br><br><br><br><br>
-      <div class="row">        
-       
-            </div>
+          <!--<h1 class="description-header">header</h1>-->
         </div>
-    </div>
-
-    </div>
-  </section>
-</div>
+      </div>
+        <hr>
+        <div class="row">        
+          <!-- Bar Graph Div -->
+                <h4>Presidential Administration vs Volume of Hate Crime</h4>
+          <div class="col-lg-12 col-md-12">
+            <div id="bar-graph"></div>
+         </div>
+         
+          <div class="col-md-8">
+              <div class="row">
+                  <div class="col-md-8">
+                  </div>
+                  <div class="col-md-8">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-6">
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+  </div>
+          <!--Map Div-->
+          <h4>Obama's Top Five Hate Crimes <br> during his First Term of Presidency</h4>
+          <div id="obama"></div>
 
 <!-- footer -->
     <footer>
@@ -117,6 +123,9 @@ crossOrigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-​
+            <!-- API key -->
+            <script type="text/javascript" src="static/js/config.js"></script>
+            <!-- Our JS -->
+            <script type="text/javascript" src="static/js/bar.js"></script>​
 
 </html>
