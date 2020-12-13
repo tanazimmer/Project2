@@ -9,17 +9,21 @@ We are currently being bombarded by the media with news of hate crimes, and many
 
 ## Bar Graph
 
-![1-Logo](Images/1-Logo.png)
+![Bar](Images/Bar.png)
 
-Our Bar chart displays the relationship between the volume of hate crimes and year of administration for President Clinton, Bush, Obama and Trump. Notice the following: 2001, President Bush’s first year of presidency, has the highest volume of hate crime. Now we aren’t positive if this is a residual result from Clinton's last year or built up anticipation of Bush’s induction but at any rate this is what the data is showing. Before we move on to the other presidents, another note regarding Bush’s first term is that he has the most significant decrease in hate crime. So although he had the most volume of hate crime in 2001, whatever efforts he and his team put forth worked because in 2002 that volume lowered significantly among the three other presidents in this dataset. Moving on to President Obama, who according to this graph had the least amount of hate crime denoted in 2014, which was his second term. President Trump did not have the most or the least amount of hate crime. Comparing the two years of data that we have, hate crime volume did increase but a very small increase. From 2014 to 2018 hate crime consistently rose it did not decrease at any moment within those years. During President Clinton's first term, he experienced the highest increase of hate crime.
+Our Bar chart displays the relationship between the volume of hate crimes and year of administration for President Clinton, Bush, Obama and Trump. Notice the following: 2001, President Bush’s first year of presidency, has the highest volume of hate crime. Now we aren’t positive if this is a residual result from Clinton's last year or built up anticipation of Bush’s induction but at any rate this is what the data is showing. 
+
+Before we move on to the other presidents, another note regarding Bush’s first term is that he has the most significant decrease in hate crime. So although he had the most volume of hate crime in 2001, whatever efforts he and his team put forth worked because in 2002 that volume lowered significantly among the three other presidents in this dataset. Moving on to President Obama, who according to this graph had the least amount of hate crime denoted in 2014, which was his second term. President Trump did not have the most or the least amount of hate crime. 
+
+Comparing the two years of data that we have, hate crime volume did increase but a very small increase. From 2014 to 2018 hate crime consistently rose it did not decrease at any moment within those years. During President Clinton's first term, he experienced the highest increase of hate crime.
 
 ### Map
-![1-Logo](Images/1-Logo.png)
+![](Images/Map.png)
 
 
 ### Database
 
-![2-BasicMap](Images/2-BasicMap.png)
+![](Images/2-BasicMap.png)
 
 
 ## Sources
