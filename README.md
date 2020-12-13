@@ -1,9 +1,9 @@
 # Is there a relationship between Hate Crimes and the Presidential administration in the US ?
 
 Team Members 
-* Crisharon Beale
-* Tana Zimmer
-* Jacob Servidio
+* Crisharon Beale created the Bar and Pie Graph. Created code for Flask
+* Tana Zimmer created the HTML & GeoJSON Map
+* Jacob Servidio cleaned the Data, loaded into Postgres and created connection to AWS 
 
 We are currently being bombarded by the media with news of hate crimes, and many media outlets want to blame the Presidential Administration. We set out to see if hate crimes truly are the highest they've been in years.
 
