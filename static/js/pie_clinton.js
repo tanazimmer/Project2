@@ -16,15 +16,15 @@ var svg = d3.select("#clinton")
 
 // Add First Term Presidential data: I turned the csv created from sql qury into a dictionary. Then copied and pasted into "data" (hard-coded)
 var data =  {
-    "Anti-White": 3186
+    "Anti-White": 4824
   ,
-    "Anti-Black or African American": 10756
+    "Anti-Black or African American": 11666
   ,
-    "Anti-Gay(Male)": 3343
+    "Anti-Gay(Male)": 2608
   , 
-    "Anti-Jewish": 3885 
+    "Anti-Jewish": 4227 
   , 
-    "Anti-Hispanic or Latino": 2884
+    "Anti-Hispanic or Latino": 1837
   }
 
 // set the color scale
