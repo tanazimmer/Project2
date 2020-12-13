@@ -36,7 +36,7 @@ myMap.on('load', function () {
 
   }
 
-  var geojsondata = "static/templates/mapdata.geojson";
+  var geojsondata = "templates/mapdata.geojson";
 
   d3.json(geojsondata, function (err, data) {
       console.log(data);
