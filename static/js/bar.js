@@ -25,28 +25,27 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 // Load data from hours-of-tv-watched.csv
-d3.csv("dataFrame_Bar.csv").then(function(tvData) {
+d3.csv("dataFrame_Bar.csv").then(function(barData) {
 
-  console.log(tvData);
+  console.log(barData);
 
-  // Cast the hours value to a number for each piece of tvData
-  tvData.forEach(function(d) {
+  // Cast the number of crimes value to a number for each piece of barData
+  barData.forEach(function(d) {
     d.num_of_crimes = +d.num_of_crimes;
   });
 
-  // Configure a band scale for the horizontal axis with a padding of 0.1 (10%)
+  // Configure a band scale for the horizontal axis with a padding of 0.5 (50%)
   var xBandScale = d3.scaleBand()
-    .domain(tvData.map(d => d.data_year))
+    .domain(barData.map(d => d.data_year))
     .range([0, chartWidth])
     .padding(0.5);
 
   // Create a linear scale for the vertical axis.
   var yLinearScale = d3.scaleLinear()
-    .domain([0, d3.max(tvData, d => d.num_of_crimes)])
+    .domain([0, d3.max(barData, d => d.num_of_crimes)])
     .range([chartHeight, 0]);
 
-  // Create two new functions passing our scales in as arguments
-  // These will be used to create the chart's axes
+  // create the chart's axes
   var bottomAxis = d3.axisBottom(xBandScale);
   var leftAxis = d3.axisLeft(yLinearScale).ticks(12);
 
@@ -59,10 +58,10 @@ d3.csv("dataFrame_Bar.csv").then(function(tvData) {
     .attr("transform", `translate(0, ${chartHeight})`)
     .call(bottomAxis);
 
-  // Create one SVG rectangle per piece of tvData
+  // Create one SVG rectangle per piece of barData
   // Use the linear and band scales to position each rectangle within the chart
   chartGroup.selectAll(".bar")
-    .data(tvData)
+    .data(barData)
     .enter()
     .append("rect")
     .attr("class", "bar")
@@ -70,17 +69,8 @@ d3.csv("dataFrame_Bar.csv").then(function(tvData) {
     .attr("y", d => yLinearScale(d.num_of_crimes))
     .attr("width", xBandScale.bandwidth())
     .attr("height", d => chartHeight - yLinearScale(d.num_of_crimes))
-    
-    
-//   chartGroup.append('g')
-//     .attr('class', 'grid')
-//     .call(makeYLines()
-//     .tickSize(-width, 0, 0)
-//     .tickFormat(''));
 
- ///////////// 
- 
-/////////////        
+
 }).catch(function(error) {
   console.log(error);
 });
