@@ -37,7 +37,7 @@ def welcome():
         f"/api/pie-chart<br/>"
         f"/api/map-graph<br/>"
         f"/api/victim_by_term<br/>"
-        f"/index2.html<br>"
+        f"/home.html<br>"
     )
 @app.route("/api/hatecrimes")
 def names():
@@ -65,9 +65,25 @@ def passengers():
         bar_dict["num_of_crimes"] = num_of_crimes
         bar_grouped.append(bar_dict)
     return jsonify(bar_grouped)
-@app.route("/index2.html")
-def index():
-    return render_template('index2.html')
+@app.route("/home.html")
+def home():
+    return render_template('home.html')
+@app.route("/map2.html")
+def map2():
+    return render_template('map2.html')
+@app.route("/pie2.html")
+def pie2():
+    return render_template('pie2.html')
+@app.route("/bar2.html")
+def bar2():
+    return render_template('bar2.html')
+@app.route("/team2.html")
+def team2():
+    return render_template('team2.html')
+@app.route("/data2.html")
+def data2():
+    return render_template('data2.html')
+
 @app.route("/api/victim_by_term")
 def victims():
     # Create our session (link) from Python to the DB
