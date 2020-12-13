@@ -42,7 +42,7 @@ var arcGenerator = d3.arc()
   .innerRadius(0)
   .outerRadius(radius)
 
-// Build the pie chart
+/// Build the pie chart
 svg
   .selectAll('obamaSlices')
   .data(data_ready)
