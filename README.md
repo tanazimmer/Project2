@@ -1,5 +1,7 @@
 # Is there a relationship between Hate Crimes and the Presidential administration in the US ?
 
+** Please visit our website to view all visulizations and data** https://tanazimmer.github.io/Project2/
+
 Team Members 
 * Crisharon Beale created the Bar and Pie Graph. Created code for Flask
 * Tana Zimmer created the HTML & GeoJSON Map
